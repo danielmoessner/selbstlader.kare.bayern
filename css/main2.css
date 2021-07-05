@@ -1,0 +1,65 @@
+.tortugafooter {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.tortugafooter img {
+  max-height: 50px;
+}
+
+.tortugafooter .tortugalink {
+  color: #A50800;
+}
+
+.tortugafooter .tortugalink:hover {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+body {
+  background-color: orange;
+  text-transform: lowercase;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 82vh;
+}
+
+main .card {
+  max-width: 360px;
+  background-color: darkorange;
+}
+
+main .card .card-header, main .card .card-footer {
+  background-color: darkorange;
+}
+
+main .card .card-block {
+  padding: 0;
+}
+
+main .card a {
+  color: white;
+}
+
+@media (min-width: 576px) {
+  main .first {
+    margin-left: 15px;
+  }
+  main .third {
+    margin-right: 15px;
+  }
+}
+
+footer {
+  text-transform: lowercase;
+  background-color: #1C1207;
+}

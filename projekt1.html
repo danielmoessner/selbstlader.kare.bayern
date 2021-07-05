@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="icon" href="img/icon.png">
+	<!-- Zur korrekten Darstellung von Umlauten -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- Meta damit Bootstrap auf phones resized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap v4 und JQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<!-- JQuery 3.1.1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- My Stylesheet and Script -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<nav class="mainnav">
+		<a href="#" class="close" onclick="openmenu()"></a>
+		<p>Menü</p>
+		<a href="http://selbstlader.kare.bayern">Hauptseite</a>
+		<a href="kontakt">Kontakt</a>
+		<a href="galerie">Galerie</a>
+		<a href="lader">Selbstlader</a>
+		<a href="projekt1">Projekt 1</a>
+		<a href="projekt2">Projekt 2</a>
+	</nav>
+	<div class="menu">
+		<div class="wrapper" onclick="openmenu()">
+			<span class="menutext">MENÜ</span>
+			<div class="icon"></div>
+		</div>
+	</div>
+	<header>
+		<div class="headericon">
+			<a href=""><div class="icon"></div></a>
+		</div>
+		<div class="headertext headertext2">
+			<h1>
+				<span>Projekt 1</span>
+			</h1>
+		</div>
+	</header>
+	<main>
+		<section class="firstsection row">
+			<div class="left col-md-6">
+				<h2>Projekt 1</h2>
+				<p>
+					Kategorie: Rumbuddeln<br> 
+					Was wurde gemacht: Schaufel beladen<br> 
+					Wofür: Für schöne Fotos ;)
+				</p>
+			</div>
+			<div class="right righttproject col-md-6">
+				<div onclick="openlink('http://selbstlader.kare.bayern/kontakt')" class="center rightproject">
+					<a href="kontakt">Kontakt</a>
+				</div>
+			</div>
+		</section>
+		<section id="project">
+			<div class="row">
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<div class="projectpadding left">
+						<img class="img-fluid" src="img/20.jpg">
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<div class="projectpadding middle">
+						<img class="img-fluid" src="img/21.jpg">
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4 col-xs-12">
+					<div class="projectpadding right">
+						<img class="img-fluid" src="img/22.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="projecttext">
+					<h2>Keine Idee ist zu groß</h2>
+					<p>
+						Mit diesem Ladekran lässt sich so ziemlich<br> 
+						alles ausbaggern, was man sich vorstellen kann.<br>
+						Du brauchst ein Loch für einen Bunker oder einen<br>
+						neuen Swimming Pool? Kein Problem, ruf einfach<br> 
+						an und ich komm dich besuchen.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="linksection hidden-md-down">
+			<div class="d-flex flex-wrap flex-lg-nowrap">
+				<a href="projekt1" class="flex-first d-flex leftlinksection">
+					<div class="flex-first leftarrowdiv">
+						<div class="leftarrow"></div>
+					</div>
+					<div class="leftproject project1">
+						<div class="text">
+							<p>vorheriges Projekt</p>
+							<h2>Projekt 1</h2>
+						</div>
+					</div>		
+				</a>
+				<a href="projekt2" class="d-flex rightlinksection">
+					<div class="rightproject project2">
+						<div class="text">
+							<p>nächstes Projekt</p>
+							<h2>Projekt 2</h2>
+						</div>
+					</div>
+					<div class="flex-last rightarrowdiv">
+						<div class="rightarrow"></div>
+					</div>			
+				</a>
+			</div>
+		</section>
+		<section class="linksection hidden-lg-up">
+			<div href="projekt1" class="leftproject fi project1">
+				<div class="text">
+					<p>vorheriges projekt</p>
+					<h2>Projekt 1</h2>
+				</div>
+				<div class="overlay contactoverlay">
+					<div class="rightarroww"></div>
+				</div>
+			</div>		
+			<div href="projekt2" class="rightproject fi project2">
+				<div class="text">
+					<p>nächstes projekt</p>
+					<h2>Projekt 2</h2>
+				</div>
+				<div class="overlay contactoverlay">
+					<div class="leftarroww"></div>
+				</div>
+			</div>		
+		</section>
+		<section class="lastsection">
+			<a href="http://selbstlader.kare.bayern"><h3>Zurück zur Startseite</h3></a>
+		</section>
+	</main>
+	<footer class="tortugafooter mt-5 d-flex flex-row align-items-center">
+		<nav class="navbar mr-auto ml-auto">
+			<div class="">
+				<b><a href="impressum.html" class="link-transform mb-5">impressum</a></b><br>
+			</div>
+		</nav>
+	</footer>
+</body>
+</html>

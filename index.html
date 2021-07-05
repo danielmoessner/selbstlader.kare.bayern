@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="icon" href="img/icon.png">
+	<!-- Zur korrekten Darstellung von Umlauten -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- Meta damit Bootstrap auf phones resized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap v4 und JQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<!-- JQuery 3.1.1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- My Stylesheet and Script -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<!-- <div id="alertdiv" class="alertdiv" style="position: fixed;left: 0; top: 500px;background: black;z-index: 999;">div</div> -->
+	<nav class="mainnav">
+		<a href="#" class="close" onclick="openmenu()"></a>
+		<p>Menü</p>
+		<a href="http://selbstlader.kare.bayern">Hauptseite</a>
+		<a href="kontakt">Kontakt</a>
+		<a href="galerie">Galerie</a>
+		<a href="lader">Selbstlader</a>
+		<a href="projekt1">Projekt 1</a>
+		<a href="projekt2">Projekt 2</a>
+	</nav>
+	<div class="menu">
+		<div class="wrapper" onclick="openmenu()">
+			<span class="menutext">MENÜ</span>
+			<div class="icon"></div>
+		</div>
+	</div>
+	<header> <!-- Falls ein Fehler mit Bild nicht gefunden kommt schau in die .js datei rein -->
+		<div class="headericon">
+			<a href="http://kare.bayern"><div class="icon"></div></a>
+		</div>
+		<div class="headertext">
+			<h1>
+				<span>Willkommen!</span><br><span>Ich bin Kare Müller</span>
+			</h1>
+			<h2>
+				<span>Ich habe den schnellsten und</span><br><span>größten Autoladekran in der</span><br><span>gesamten Weltumgebung.</span>
+			</h2>
+		</div>
+		<div class="headercontact">
+			<a href="kontakt">Kontakt</a>
+		</div>
+	</header>
+	<main>
+		<section class="d-flex flex-row" id="indexsection">
+			<div class="d-flex flex-column left">
+				<div href="projekt1" class="fi fi1">
+					<div class="overlay">
+						<div class="triangle"></div>
+						<div class="text">
+							<h3>Projekt 1</h3>
+							<p>Das beste was die Welt je gesehen hat</p>
+						</div>
+					</div>
+				</div>
+				<div href="lader" class="fi fi2">
+					<div class="overlay">
+						<div class="triangle"></div>
+						<div class="text">
+							<h3>Mercedes Benz Axor 1833</h3>
+							<p>Alles über den Kran Kipper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-column middle">
+				<div href="galerie" class="fi fi3">
+					<div class="overlay">
+						<div class="triangle"></div>
+						<div class="text">
+							<h3>Galerie</h3>
+							<p>Bilder zu Projekten und dem Kran</p>
+						</div>
+					</div>
+				</div>
+				<div href="projekt2" class="fi fi4">
+					<div class="overlay">
+						<div class="triangle"></div>
+						<div class="text">
+							<h3>Projekt 2</h3>
+							<p>Ein Meisterwerk</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-column right">
+				<div href="kontakt" class="fi fi6 d-flex align-items-center">
+					<div class="w-100">
+						<address>
+							<h2>
+								<span>karlheinz</span> müller
+							</h2>
+							<strong>
+								schlesierstraße 14<br>
+								85386 eching<br>
+								bayern<br>
+							</strong>
+						</address>
+						<address>
+							<strong>
+								telefon: 0152 02991306<br>
+								fax: 089 41251249<br>
+								mail: info@kare.bayern<br>
+							</strong>
+						</address>
+					</div>
+				</div>
+				<div href="kontakt" class="fi fi7">
+					<div class="overlay">
+						<div class="triangle"></div>
+						<div class="text">
+							<h3>Kontakt</h3>
+							<p>Telefon und Kontaktformular</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="lastsection">
+			<a href="kontakt"><h3>Kontakt</h3></a>
+		</section>
+	</main>
+	<footer class="tortugafooter mt-5 d-flex flex-row align-items-center">
+		<nav class="navbar mr-auto ml-auto">
+			<div class="">
+				<b><a href="impressum.html" class="link-transform mb-5">impressum</a></b> | <b><a href="privacy.html" class="link-transform mb-5">Datenschutz</a></b><br>
+			</div>
+		</nav>
+	</footer>
+</body>
+</html>

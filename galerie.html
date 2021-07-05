@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="icon" href="img/icon.png">
+	<!-- Zur korrekten Darstellung von Umlauten -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- Meta damit Bootstrap auf phones resized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap v4 und JQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<!-- JQuery 3.1.1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- My Stylesheet and Script -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<nav class="mainnav">
+		<a href="#" class="close" onclick="openmenu()"></a>
+		<p>Menü</p>
+		<a href="http://selbstlader.kare.bayern">Hauptseite</a>
+		<a href="kontakt">Kontakt</a>
+		<a href="galerie">Galerie</a>
+		<a href="lader">Selbstlader</a>
+		<a href="projekt1">Projekt 1</a>
+		<a href="projekt2">Projekt 2</a>
+	</nav>
+	<div class="menu">
+		<div class="wrapper" onclick="openmenu()">
+			<span class="menutext">MENÜ</span>
+			<div class="icon"></div>
+		</div>
+	</div>
+	<header>
+		<div class="headericon">
+			<a href=""><div class="icon"></div></a>
+		</div>
+		<div class="headertext headertext2">
+			<h1>
+				<span>Galerie</span>
+			</h1>
+		</div>
+	</header>
+	<main>
+		<section class="firstsection row">
+			<div class="left col-md-6 center d-flex flex-column justify-content-center">
+				<h2 class="text-center">Mercedes Benz Axor 1833</h2>
+			</div>
+			<div class="right col-md-6 mw-100">
+				<video src="vid/lader.mp4" class="img-fluid" controls>
+				    Ihr Browser kann dieses Video nicht wiedergeben.<br/>
+				    Dieser Film zeigt eine Demonstration von dem Selbstlader. 
+				</video>
+			</div>
+		</section>
+		<section id="gallerysection">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="img/4.jpg">
+						<div class="image image1 fi">
+							<div class="overlay"></div>
+						</div>	
+					</a>
+					<a href="img/5.jpg">
+						<div class="image image2 fi">
+							<div class="overlay"></div>
+						</div>
+					</a>
+					<a href="img/6.jpg">
+						<div class="image image3 fi">
+							<div class="overlay"></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="img/7.jpg">
+						<div class="image image4 fi">
+							<div class="overlay"></div>
+						</div>
+					</a>
+					<a href="img/8.jpg">
+						<div class="image image5 fi">
+							<div class="overlay"></div>
+						</div>
+					</a>
+					<a href="img/9.jpg">
+						<div class="image image6 fi">
+							<div class="overlay"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="lastsection">
+			<a href="http://selbstlader.kare.bayern"><h3>Zurück zur Startseite</h3></a>
+		</section>
+	</main>
+	<footer class="tortugafooter mt-5 d-flex flex-row align-items-center">
+		<nav class="navbar mr-auto ml-auto">
+			<div class="">
+				<b><a href="impressum.html" class="link-transform mb-5">impressum</a></b><br>
+			</div>
+		</nav>
+	</footer>
+</body>
+</html>
